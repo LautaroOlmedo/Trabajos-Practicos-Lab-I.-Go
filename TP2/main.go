@@ -5,20 +5,22 @@ import (
 )
  func main(){
 
-	exercises.Serie()
-
-
- 	
-
+	exercises.VendingMachine(3, 4, 5, 1)
 }
 
 
 
 // EXERCISE 4
-//exercises.MultipleNumbersOf3()
+// exercises.MultipleNumbersOf3()
 
 // EXERCISE 5
-//	fmt.Println(exercises.IsPrime(95))
+// fmt.Println(exercises.IsPrime(95))
 
 // EXERCISE 6
-// exercises.Serie()
+// exercises.Series()
+
+// EXERCISE 7
+// exercises.Fibonacci(36)
+
+// EXERCISE 8
+// exercises.AsteriskPyramid(6)
