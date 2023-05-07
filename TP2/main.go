@@ -5,7 +5,7 @@ import (
 )
  func main(){
 
-	exercises.VendingMachine(3, 4, 5, 1)
+	exercises.Num()
 }
 
 
