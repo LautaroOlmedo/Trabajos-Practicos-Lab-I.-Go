@@ -38,25 +38,36 @@ func VendingMachine(cocaQuantity int, spriteQuantity int, fantaQuantity int, wat
 		    switch selectedOpition {
 		        case 1:
 			        fmt.Println("you chose coke")
-			        if( cocaQuantity == 0){
+			        if( cokeQ < 1){
 				        fmt.Println("No stock. Sorry :(")
+						break
 			        }else{
 				        for{
-					        fmt.Println("Enter 1 or 0.5 coins. Total is ", price)
-					        fmt.Scan(&inputValue)
+					        fmt.Print("Entry 1 or 0.5 coins. Total is ", price, ": ")
+							//fmt.Println(" ")
+							fmt.Scanf("%f", &inputValue)
+							if(inputValue > 1.0 || inputValue < 0.5){
+								fmt.Println("Not accepted coin")
+							}else{
 					        total = total + inputValue
 					        if(total > 3.5){
 						        cokeQ = cokeQ - 1  
 						        returnV = total - 3.5
+								fmt.Println(" ")
 						        fmt.Println("Your change is ", returnV, ". Enjoy the coke")
+								fmt.Println(" ")
 						        break
 					        }else if(total == 3.5){
 						        cokeQ = cokeQ - 1  
 						        fmt.Println("Enjoy the coke")
+								fmt.Println(" ")
 						        break
 					        }else{
 						        fmt.Println("actual total: ", total)
+								
 					        }  
+							}
+					        
 				        }
 			        }
 
@@ -65,21 +76,101 @@ func VendingMachine(cocaQuantity int, spriteQuantity int, fantaQuantity int, wat
 				    if( spriteQ == 0){
 					    fmt.Println("No stock. Sorry :(")
 				    }else{
-					    fmt.Println("Enter 1 or 0.5 coins. Total is ", price)
-					     spriteQ = spriteQ - 1
+					    for{
+					        fmt.Print("Entry 1 or 0.5 coins. Total is ", price, ": ")
+							//fmt.Println(" ")
+							fmt.Scanf("%f", &inputValue)
+							if(inputValue > 1.0 || inputValue < 0.5){
+								fmt.Println("Not accepted coin")
+							}else{
+					        total = total + inputValue
+					        if(total > 3.5){
+						        spriteQ = spriteQ - 1  
+						        returnV = total - 3.5
+								fmt.Println(" ")
+						        fmt.Println("Your change is ", returnV, ". Enjoy the sprite")
+								fmt.Println(" ")
+						        break
+					        }else if(total == 3.5){
+						        spriteQ = spriteQ - 1  
+						        fmt.Println("Enjoy the sprite")
+								fmt.Println(" ")
+						        break
+					        }else{
+						        fmt.Println("actual total: ", total)
+								
+					        }  
+							}
+					        
+				        }
 				    }
 	
 		        case 3: 
-			        fantaQ = fantaQ +1
+				fmt.Println("you chose sprite")
+				if( fantaQ == 0){
+					fmt.Println("No stock. Sorry :(")
+				}else{
+					for{
+						fmt.Print("Entry 1 or 0.5 coins. Total is ", price, ": ")
+						//fmt.Println(" ")
+						fmt.Scanf("%f", &inputValue)
+						if(inputValue > 1.0 || inputValue < 0.5){
+							fmt.Println("Not accepted coin")
+						}else{
+						total = total + inputValue
+						if(total > 3.5){
+							fantaQ = fantaQ - 1  
+							returnV = total - 3.5
+							fmt.Println(" ")
+							fmt.Println("Your change is ", returnV, ". Enjoy the fanta")
+							fmt.Println(" ")
+							break
+						}else if(total == 3.5){
+							fantaQ = fantaQ - 1  
+							fmt.Println("Enjoy the fanta")
+							fmt.Println(" ")
+							break
+						}else{
+							fmt.Println("actual total: ", total)
+							
+						}  
+						}
+						
+					}
+				}
 				    
 		        case 4: 
-				    fmt.Println("you chose water")
-				    if( waterQ == 0){
-					    fmt.Println("No stock. Sorry :(")
-				    }else{
-					    fmt.Println("Enter 1 or 0.5 coins. Total is ", price)
-					waterQ = waterQ - 1
-				    }
+				fmt.Println("you chose sprite")
+				if( waterQ == 0){
+					fmt.Println("No stock. Sorry :(")
+				}else{
+					for{
+						fmt.Print("Entry 1 or 0.5 coins. Total is ", price, ": ")
+						//fmt.Println(" ")
+						fmt.Scanf("%f", &inputValue)
+						if(inputValue > 1.0 || inputValue < 0.5){
+							fmt.Println("Not accepted coin")
+						}else{
+						total = total + inputValue
+						if(total > 3.5){
+							waterQ = waterQ - 1  
+							returnV = total - 3.5
+							fmt.Println(" ")
+							fmt.Println("Your change is ", returnV, ". Enjoy the water")
+							fmt.Println(" ")
+							break
+						}else if(total == 3.5){
+							waterQ = waterQ - 1  
+							fmt.Println("Enjoy the water")
+							fmt.Println(" ")
+							break
+						}else{
+							fmt.Println("actual total: ", total)
+							
+						}  
+						}
+					}
+				}
 				
 		        default:
 				    fmt.Println("invalid option")
