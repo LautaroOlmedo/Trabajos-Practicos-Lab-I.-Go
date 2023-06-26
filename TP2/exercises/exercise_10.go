@@ -11,18 +11,15 @@ import "fmt"
 func Num(){
 	var userNum [4]int
 	var defaultNum[4]int
-	var good int 
-	var regular int
-	var bad int
 
 	defaultNum[0] = 1
 	defaultNum[1] = 9
 	defaultNum[2] = 8
 	defaultNum[3] = 7
 
-	good = 0
-	regular = 0
-	bad = 0
+	good := 0
+	regular := 0
+	bad := 0
 
 	for i := 0; i < 4; i++ {
 		fmt.Println("Enter the ", i, " num")
@@ -33,7 +30,7 @@ func Num(){
 		for x := 0; x < 4; x++ {
 			if(userNum[x] == defaultNum[t] && x == t){ // ---> 1 == 1 && 0 == 0?
 				good ++
-			}else if(userNum[x] == defaultNum[t]){
+			}else if(userNum[x] == defaultNum[t]){ // ---> 1 == 1?
 				regular ++
 			}else{
 				bad ++

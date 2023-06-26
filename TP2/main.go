@@ -5,7 +5,7 @@ import (
 )
  func main(){
 
-	exercises.VendingMachine(1, 1, 8, 7)
+	exercises.Num()
 }
 
 
@@ -26,4 +26,4 @@ import (
 // exercises.AsteriskPyramid(6)
 
 // EXERCISE 9
-// exercises.VendingMachine(10, 9, 8, 7)
+// exercises.VendingMachine(1, 1, 1, 1)
