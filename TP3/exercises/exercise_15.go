@@ -7,20 +7,15 @@ import "fmt"
 
 func NewVector(arr1 [5]int32, arr2 [5]int32) error {
 	var newArr [10]int32
+	var countArrOne, countArrTwo int32
+	countArrOne = 0
+	countArrTwo = 0
 
 	for i := 0; i < len(newArr); i++ {
-		countArrOne := 0
-		countArrTwo := 0
-		if i < 3 {
+		if i%2 == 0 {
 			newArr[i] = arr1[countArrOne]
 			countArrOne++
-		} else if i > 2 && i < 6 {
-			newArr[i] = arr2[countArrTwo]
-			countArrTwo++
-		} else if i > 5 && i < 8 {
-			newArr[i] = arr1[countArrOne]
-			countArrOne++
-		} else if i > 8 && i < 11 {
+		} else if i%2 != 0 {
 			newArr[i] = arr2[countArrTwo]
 			countArrTwo++
 		}

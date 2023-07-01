@@ -5,7 +5,7 @@ import "TP3/exercises"
 func main() {
 	//var myVector [10]int32
 
-	exercises.NewVector([5]int32{1, 2, 3, 4, 5}, [5]int32{6, 7, 8, 9, 10})
+	exercises.Bus()
 
 }
 
@@ -31,6 +31,12 @@ func main() {
 
 // EXERCISE 6 // ---> works incorrectly.
 // exercises.Palindrome("neuquen")
+
+// EXERCISE 7
+// ContainingAnotherWord("palanca", "pala")
+
+// EXERCISE 9 ---> INCOMPLETE
+// exercises.Bus()
 
 // EXERCISE 15
 // exercises.NewVector([5]int32{1, 2, 3, 4, 5}, [5]int32{6, 7, 8, 9, 10})
