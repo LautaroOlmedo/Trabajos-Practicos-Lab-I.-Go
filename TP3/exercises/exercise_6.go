@@ -8,12 +8,18 @@ import (
 // Determinar si una cadena de texto es palíndromo. Es decir, que se lee igual de derecha a izquierda, que de izquierda a derecha. Por ejemplo: “NEUQUEN”, “SOMOS”.
 
 func Palindrome(word string) {
+	lonLetter := len(word)
 	for i := 0; i < len(word); i++ {
-		for t := len(word) - 1; t > int((len(word) / 2)); t-- { // ---> neuquen
+		lonLetter--
 
-			if word[i] == word[t] { // ---> n = n ? | e = e ? |
-				fmt.Println("i:", string(word[i]), " t:", string(word[t]))
-			}
+		if i == lonLetter {
+			fmt.Println("The word is  a palindrome")
+			break
+		}
+
+		if word[i] != word[lonLetter] {
+			fmt.Println("The word is not a palindrome")
+			break
 		}
 	}
 }

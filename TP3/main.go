@@ -5,7 +5,7 @@ import "TP3/exercises"
 func main() {
 	//var myVector [10]int32
 
-	exercises.Palindrome("neuquen")
+	exercises.Palindrome("pala")
 
 }
 
@@ -26,7 +26,7 @@ func main() {
 // EXERCISE 5
 // exercises.NumberAppears()
 
-// EXERCISE 6 // ---> works incorrectly.
+// EXERCISE 6
 // exercises.Palindrome("neuquen")
 
 // EXERCISE 7
