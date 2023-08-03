@@ -5,7 +5,7 @@ import "TP3/exercises"
 func main() {
 	//var myVector [10]int32
 
-	exercises.Bus()
+	exercises.Palindrome("neuquen")
 
 }
 
@@ -23,9 +23,6 @@ func main() {
 // EXERCISE 4
 // exercises.VectorsSum()
 
-// EXERCISE 4
-// exercises.VectorsSum()
-
 // EXERCISE 5
 // exercises.NumberAppears()
 
@@ -35,7 +32,10 @@ func main() {
 // EXERCISE 7
 // ContainingAnotherWord("palanca", "pala")
 
-// EXERCISE 9 ---> INCOMPLETE
+// EXERCISE 10
+// exercises.UdaGames()
+
+// EXERCISE 12 ---> INCOMPLETE
 // exercises.Bus()
 
 // EXERCISE 15

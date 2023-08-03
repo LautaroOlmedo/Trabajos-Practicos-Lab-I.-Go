@@ -1,6 +1,9 @@
 package exercises
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 // TP N°3 EJERCICIO N°7 OLMEDO-LAUTARO
 
@@ -9,22 +12,10 @@ import "strings"
 // queremos saber si la cadena “pala” está contenida dentro de “palanca”, el método devolvería true, en caso contrario devolvería false.
 
 func ContainingAnotherWord(word, word2 string) bool {
-	//for i := 0; i < len(word); i++ {
-	//	count := 0
-	//	for t := 0; t < len(word)-1; t++ { // ---> palanca
-	//		if word2[t] == word[i] {
-	//			count++
-	//		} else {
-	//			continue
-	//		}
-	//	}
-	//	if count == len(word2) {
-	//		return true
-	//	}
-	//}
-	//return false
 	if strings.Index(word, word2) == -1 {
+		fmt.Println("the first word does not contain the second :(")
 		return false
 	}
+	fmt.Println("the first word contain the second :D")
 	return true
 }
